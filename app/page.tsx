@@ -1,8 +1,9 @@
 import { frontend } from "@/api/apis";
 import { useState } from 'react';
-import  Login  from "@/components/auth/Login";
+import  Signin  from "@/components/auth/Signin";
 import SignUp from "@/components/auth/Signup";
 import Forgotpass from "@/components/auth/Forgotpass";
+import Dashboard from "@/components/dashboard/Dashboard";
 
 export default async function Home() {
 
@@ -12,9 +13,12 @@ export default async function Home() {
   return (
     <main>
        {/* Created Login,Signup, and forgot password but havn't done the routing between pages */}
-       <Login />
+       {/* <Signin /> */}
        {/* <SignUp /> */}
        {/* <Forgotpass /> */}
+       <Dashboard />
+       
+
 
        <p>{res?.data.message}</p>
     </main>
