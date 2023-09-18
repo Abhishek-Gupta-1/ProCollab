@@ -4,6 +4,7 @@ import  Signin  from "@/components/auth/Signin";
 import SignUp from "@/components/auth/Signup";
 import Forgotpass from "@/components/auth/Forgotpass";
 import Dashboard from "@/components/dashboard/Dashboard";
+import Cards from "@/components/dashboard/Cards";
 
 export default async function Home() {
 
@@ -17,7 +18,8 @@ export default async function Home() {
        {/* <SignUp /> */}
        {/* <Forgotpass /> */}
        <Dashboard />
-       
+       {/* <Cards /> */}
+               
 
 
        <p>{res?.data.message}</p>
