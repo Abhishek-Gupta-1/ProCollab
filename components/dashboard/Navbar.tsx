@@ -1,6 +1,6 @@
 "use client";
 
-import * as React from 'react';
+import React from 'react';
 import AppBar from '@mui/material/AppBar';
 import Button from '@mui/material/Button';
 import CssBaseline from '@mui/material/CssBaseline';
@@ -14,7 +14,7 @@ import { createTheme, styled, ThemeProvider } from '@mui/material/styles';
 // TODO remove, this demo shouldn't need to reset the theme.
 const defaultTheme = createTheme();
 //Navbar **************************************
-export default function Album() {
+export default function Navbar() {
   return (
     <ThemeProvider theme={defaultTheme}>
       <CssBaseline />

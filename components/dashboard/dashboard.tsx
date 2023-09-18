@@ -1,7 +1,7 @@
 "use client";
 
 
-import * as React from 'react';
+import React from 'react';
 import Button from '@mui/material/Button';
 import CssBaseline from '@mui/material/CssBaseline';
 import Grid from '@mui/material/Grid';
@@ -16,25 +16,12 @@ import Image from 'next/image';
 
 import Navbar from './Navbar';
 import Cards from './Cards';
-
-
-function Copyright() {
-  return (
-    <Typography variant="body2" color="text.secondary" align="center">
-      {'Copyright © ProCollab '}
-      
-      {new Date().getFullYear()}
-      {'.'}
-    </Typography>
-  );
-}
-
-const cards = [1, 2, 3, 4, 5, 6, 7, 8, 9];
+import Footer from './Footer';
 
 
 const defaultTheme = createTheme();
 
-export default function Album() {
+export default function Dashboard() {
   return (
     <ThemeProvider theme={defaultTheme}>
       <CssBaseline />
@@ -48,19 +35,16 @@ export default function Album() {
             backgroundImage: 'url(https://i.postimg.cc/3xrfBBXs/hero.jpg)', 
             backgroundRepeat: 'no-repeat',
             backgroundSize: 'cover',
-            
             pt: 10,
             backgroundPosition: 'center'
           }}
-          
         >
           <Container sx= {{   }} >
             <Typography
               component="h1"
               variant="h1"
               align="left"
-              color="text.primary"
-              
+              color="text.primary" 
             >
              Inspire Collaborate
             </Typography>
@@ -78,9 +62,7 @@ export default function Album() {
               sx={{ pt: 8, pb : 30 }}
               direction="row"
               spacing={2}
-              justifyContent="center"
-              
-              
+              justifyContent="center" 
             >
               <Button variant="contained">Upload Project</Button>
               <Button variant="contained">Search Project</Button>
@@ -99,12 +81,8 @@ export default function Album() {
         {/* -------------Hero Section End----------------------- */}
 
         <Cards />
+        <Footer />
 
-      {/* Footer */}
-      <Box sx={{ bgcolor: 'background.paper', p: 6 }} component="footer">
-        <Copyright />
-      </Box>
-      {/* End footer */}
       </main>
     </ThemeProvider>
   );
