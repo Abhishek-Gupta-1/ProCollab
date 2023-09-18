@@ -1,5 +1,6 @@
 "use client";
-import React from 'react';
+
+import * as React from "react"
 
 import Button from '@mui/material/Button';
 import Card from '@mui/material/Card';
@@ -22,6 +23,17 @@ export default function Cards() {
   return (
     <ThemeProvider theme={defaultTheme}>
       <CssBaseline />
+
+      <Typography
+        variant='h4'
+        align='center'
+        color="text.primary"
+        fontWeight="medium"
+        sx={{ mt: 4 }}
+        >
+          Projects
+        </Typography>
+
      <main>
         <Container sx={{ py: 8 }} maxWidth="md">
           {/* End hero unit */}

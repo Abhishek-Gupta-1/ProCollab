@@ -54,8 +54,6 @@ export default function FindProjectPage() {
       </main>
     </ThemeProvider>
 
-    <Input />
-
     {/* <Cards /> */}
     {/* <Footer /> */}
 
