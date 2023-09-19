@@ -28,7 +28,9 @@ export default function Navbar() {
           <Link variant="h6" color="#FFFFFF" noWrap style={{ textDecoration: 'none' }} position="relative" sx={{ pl : 3 }} href="" > Collaboration</Link>
           <Link variant="h6" color="#FFFFFF" noWrap style={{ textDecoration: 'none' }} position="relative" sx={{ pl : 3 }} href="" > Search Projects</Link>
           <Link variant="h6" color="#FFFFFF" noWrap style={{ textDecoration: 'none' }} position="relative" sx={{ pl : 3 , pr: 3}} href="" > Upload Projects</Link>
-          <Button variant="contained" color="success" href="#contained-buttons">Login</Button>
+        
+              <Button variant="contained" color="success" href="/signin">Login</Button>
+
         </Toolbar>
       </AppBar>
       </ThemeProvider>
