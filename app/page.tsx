@@ -1,10 +1,13 @@
 import { frontend } from "@/api/apis";
 import { useState } from 'react';
+
+
 import  Signin  from "@/components/auth/Signin";
 import SignUp from "@/components/auth/Signup";
-import Forgotpass from "@/components/auth/Forgotpass";
-import Dashboard from "@/components/dashboard/Dashboard";
+import Forgotpass from "@/components/auth/Forgotpassword";
 import Cards from "@/components/dashboard/Cards";
+import Dashboard from '@/components/dashboard/Dashboard';
+import FindProjectPage from "@/components/Find_project/FindProjectPage";
 
 export default async function Home() {
 
@@ -17,10 +20,10 @@ export default async function Home() {
        {/* <Signin /> */}
        {/* <SignUp /> */}
        {/* <Forgotpass /> */}
-       <Dashboard />
+       {/* <Dashboard /> */}
        {/* <Cards /> */}
-               
 
+      <FindProjectPage />
 
        <p>{res?.data.message}</p>
     </main>
